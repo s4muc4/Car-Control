@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2> Todos os carros</h2>
+    <table>
+        <tr th:each="carros: ${carros}" >
+        <td>ID -></td>  
+        <td th:text="${carros?.id}" />
+        <td>/PLACA -></td>  
+        <td th:text="${carros?.placa}" />
+        <td>/MARCA -></td>  
+        <td th:text="${carros?.marca}" />
+        <td>/MODELO -></td>   
+		<td th:text="${carros?.modelo}" />
+		<td>/COR -></td>   
+        <td th:text="${carros?.ano}" />
+
+    </tr>
+    </table>
+</body>
+</html>

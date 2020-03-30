@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carro por ID</title>
+</head>
+<body>
+	<h1>Carro view</h1>
+
+	<div th:if="${carro}">
+		<p th:text ="${carro?.id}"></p>
+		<p th:text ="${carro?.placa}"></p>
+		<p th:text ="${carro?.marca}"></p>
+		<p th:text ="${carro?.modelo}"></p>
+		<p th:text ="${carro?.ano}"></p>
+	</div>
+
+	<div th:unless="${carro}">
+			<p>ERROR: PRODUTO INVALIDO!</p>
+	</div>
+		
+	
+	
+
+	
+
+	
+</body>
+</html>
